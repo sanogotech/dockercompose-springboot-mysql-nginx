@@ -356,3 +356,9 @@ Caused by: javax.persistence.NonUniqueResultException: query did not return a un
 2019-11-01 13:09:13,429 INFO com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] Started ArchiJEEApplication in 18.405 seconds (JVM running for 20.681)
 2019-11-01 13:09:13,436 DEBUG com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] **** Create default user  [ADMIN, ADMIN, admin@test.com, admin2017]
 2019-11-01 13:09:13,681 INFO com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] Start Archi Application ...
+2019-11-01 13:22:34,792 INFO com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] Starting ArchiJEEApplication on c0129c4ff7e6 with PID 38 (/archijavajeespringboot/target/classes started by root in /archijavajeespringboot)
+2019-11-01 13:22:34,804 DEBUG com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2019-11-01 13:22:34,808 INFO com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] The following profiles are active: docker
+2019-11-01 13:22:51,579 INFO com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] Started ArchiJEEApplication in 17.903 seconds (JVM running for 20.186)
+2019-11-01 13:22:51,586 DEBUG com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] **** Create default user  [ADMIN, ADMIN, admin@test.com, admin2017]
+2019-11-01 13:22:51,905 INFO com.macrosoftas.archijee.ArchiJEEApplication [restartedMain] Start Archi Application ...
