@@ -1,0 +1,29 @@
+#https://www.it-connect.fr/configurer-nginx-en-tant-que-reverse-proxy/
+#https://stackoverflow.com/questions/3748517/does-the-nginx-upstream-directive-have-a-port-setting/13070622
+#https://stackoverflow.com/questions/38346847/nginx-docker-container-502-bad-gateway-response
+
+upstream monsite1 {
+    server 192.168.1.97:9090;
+	#server 192.168.1.100:6666;
+}
+
+server {
+    listen 9000;
+    charset utf-8;
+    access_log off;
+
+    location / {
+        proxy_pass http://monsite1;
+        proxy_set_header Host $host:$server_port;
+        proxy_set_header X-Forwarded-Host $server_name;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /static {
+        access_log   off;
+        expires      30d;
+
+        alias /app/static;
+    }
+}

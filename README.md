@@ -11,10 +11,18 @@ You see, I only wrote three lines, but in fact, it's very difficult to build the
 
 #DOCKER  /Simple
 
+	##Start service /background boot 
+	docker-compose up -d
+	
+	##Use docker-compose ps to view all current containers in the project
+	docker-compose ps
 
 
-
-#
+#https://www.digitalocean.com/community/tutorials/how-to-configure-the-nginx-web-server-on-a-virtual-private-server
 In the "nginx.conf" file, we can see that the end of the "http" block has:
 include /etc/nginx/conf.d/*.conf;
 include /etc/nginx/sites-enabled/*;
+
+Par définition, nginx est un reverse proxy et un serveur http (Wikipédia). 
+De ce fait il se positionne - en tant que composant d'une architecture - de manière frontale à des services applicatifs ou des serveurs Web et est capable de répondre à des requêtes HTTP. Avec les configurations appropriées il peut être utilisé comme load balancer. De manière simplifiée, nginx peut être configuré en écrivant des directives dans un fichier de configuration. Ces directives nous permettront donc de définir éventuellement une stratégie de répartition de charges 
+et les services applicatifs vers lesquels rediriger les requêtes.

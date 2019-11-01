@@ -1,4 +1,4 @@
-com\macrosoftas\archijee\DemoApplicationTests.class
-com\macrosoftas\archijee\RESTControllerTests.class
-com\macrosoftas\archijee\MyControllerTests.class
-com\macrosoftas\archijee\ExampleRepositoryTests.class
+com/macrosoftas/archijee/RESTControllerTests.class
+com/macrosoftas/archijee/DemoApplicationTests.class
+com/macrosoftas/archijee/MyControllerTests.class
+com/macrosoftas/archijee/ExampleRepositoryTests.class
